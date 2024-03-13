@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +8,64 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-     <div class="container shadow w-25" id="generaldiv">
-        <p style="text-align: center;color: aqua; margin-top: 15px;font-size: 2.5em;font-weight: 800;font-family: Georgia, 'Times New Roman', Times, serif;">GRADE CHECKER</p>
+    <div class="container shadow w-25" id="generaldiv">
+        <p
+            style="text-align: center;color: aqua; margin-top: 15px;font-size: 2.5em;font-weight: 800;font-family: Georgia, 'Times New Roman', Times, serif;">
+            GRADE CHECKER</p>
         <marquee behavior="" direction="left">
             <p style="color: white; font-family: cursive;">Check your grade to know your fate</p>
         </marquee>
-      <input type="text" class="form-control w-50" placeholder="Input Your Score" id="score">
-      <button class="btn btn-warning w-100" style="margin-top: 10px;" id="button" onclick="checkGrade()">Check Grade</button>
-      <div id="grade" class="card w-50">
+        <input type="text" class="form-control w-50" placeholder="Input Your Score" id="score">
+        <button class="btn btn-warning w-100" style="margin-top: 10px;" id="button" onclick="checkGrade()">Check
+            Grade</button>
+        <div id="grade" class="card w-50">
 
-      </div>
-      <!-- <audio src="audio/You-dey-use-your-future-to-play-sound-effect.mp3"></audio> -->
-      <!-- <audio src="audio/Aye-Le-O-Ibosi-O.mp3"></audio> -->
-      <br>
-     </div>
+        </div>
+        <!-- <audio src="audio/You-dey-use-your-future-to-play-sound-effect.mp3"></audio> -->
+        <!-- <audio src="audio/Aye-Le-O-Ibosi-O.mp3"></audio> -->
+        <br>
+    </div>
     <script src="bootstrap.js"></script>
     <script>
-        function checkGrade(){ 
-        var score = document.getElementById('score').value
-        var song1 = new Audio('audio/Applause-1-Sound-effect.mp3')
-        var song2 = new Audio('audio/You-dey-use-your-future-to-play-sound-effect.mp3')
-        var song3 = new Audio('audio/Aye-Le-O-Ibosi-O.mp3')
-        var song4 = new Audio('audio/You-Are-A-Bad-Boy-Naija-Comedy-Sound-Effect.mp3')
-        if(score == ''){
-            alert('void')
-        } else{
-            if(score >= 0 && score <= 39){
-                grade.innerHTML = 'F-fail😭 FAILURE YOU ARE WAISTING YOUR PAPA MONEY'
-                grade.style.display = 'block'
-                song2.play()
-            }
-            if (score >= 40 && score <= 45){
-                grade.innerHTML = 'D-pass 😒 THIS IS RUBBISH'
-                grade.style.display = 'block'
-                song3.play()
-            }
-            if (score >= 45 && score <= 59){
-                grade.innerHTML =  'C 😃 IT IS KINDA FARE'
-                grade.style.display = 'block'
-                song4.play()
-            }
-            if (score >= 59 && score <=69){
-                grade.innerHTML =  'B 😂 BABA YOU ARE DOING WELL'
-                grade.style.display = 'block'
-            }
-            if (score >= 69 && score <=100){
-                grade.innerHTML = 'A 🙌 BOSS MAN'
-                grade.style.display = 'block'
-                song1.play()
+        function checkGrade() {
+            var score = document.getElementById('score').value
+            var song1 = new Audio('audio/Applause-1-Sound-effect.mp3')
+            var song2 = new Audio('audio/You-dey-use-your-future-to-play-sound-effect.mp3')
+            var song3 = new Audio('audio/Aye-Le-O-Ibosi-O.mp3')
+            var song4 = new Audio('audio/You-Are-A-Bad-Boy-Naija-Comedy-Sound-Effect.mp3')
+            if (score == '') {
+                alert('void')
+            } else {
+                if (score >= 0 && score <= 39) {
+                    grade.innerHTML = 'F-fail😭 FAILURE YOU ARE WAISTING YOUR PAPA MONEY'
+                    grade.style.display = 'block'
+                    song2.play()
+                }
+                if (score >= 40 && score <= 45) {
+                    grade.innerHTML = 'D-pass 😒 THIS IS RUBBISH'
+                    grade.style.display = 'block'
+                    song3.play()
+                }
+                if (score >= 45 && score <= 59) {
+                    grade.innerHTML = 'C 😃 IT IS KINDA FARE'
+                    grade.style.display = 'block'
+                    song4.play()
+                }
+                if (score >= 59 && score <= 69) {
+                    grade.innerHTML = 'B 😂 BABA YOU ARE DOING WELL'
+                    grade.style.display = 'block'
+                }
+                if (score >= 69 && score <= 100) {
+                    grade.innerHTML = 'A 🙌 BOSS MAN'
+                    grade.style.display = 'block'
+                    song1.play()
 
+                }
             }
         }
     </script>
 </body>
+
 </html>
